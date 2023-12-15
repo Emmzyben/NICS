@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+#firstDiv{
+    display: flex;
+    flex-direction: row;
+}
+#firstDiv>div{
+    border-right: 1px solid grey;  border-bottom: 1px solid grey;
+    padding: 10px;
+}
