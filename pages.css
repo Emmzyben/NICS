@@ -54,12 +54,102 @@ margin-left: 20px;
     padding: 30px;
    }
 
-   @media screen and (max-width:600px) {
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px;
+}
+#under1{
+    width: 70%;
+    padding: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+#under2{
+    width: 30%;
+    padding: 10px;
+    font-size: 18px;
+}
+#under2>div>ul>li{
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px;
+}
+#under2>div>ul>li>a{
+    color: #000000;
+    text-decoration: none;
+    list-style-type: none;
+}
+#under2>div>ul>li>a:hover{
+    color:#0884cc;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.under1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.under1>div>img{
+    width: 300px;
+    margin: 10px;
+    margin-top: 120px;
+    box-shadow: 2px 2px 10px rgb(153, 154, 156);
+}
+.under3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.under3>div{
+    margin: 20px;
+    font-weight: 600;
+}
+.under3>div>p{
+    color: #0c6fa8;
+}
+.under3>div>ul>li{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+   @media screen and (max-width:700px) {
     .homeServices{
         padding: 20px;
        }
+       .under1{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+    }
+    .under1>div>img{
+        width: 100%;
+        height: 300px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: -5px;
+        box-shadow: 2px 2px 10px rgb(153, 154, 156);
+    }
+    #testimg{
+        width: auto;
+        margin: 30px;
+        margin-top: 0;
+        box-shadow: 2px 2px 10px rgb(153, 154, 156);
+    }
+
    }
    @media screen and (max-width:900px) {
+    .under3{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .under3>div{
+        margin: 0;
+        font-weight: 600;
+    }
+    
     #secondAbout{
         display: flex;
         flex-direction: column;
@@ -76,6 +166,22 @@ margin-left: 20px;
    
     #innerSecond2{
       width:auto ;
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+    }
+    #under1{
+        width:auto;
+        padding: 10px;
+        font-size: 20px;
+    }
+    #under2{
+        width: auto;
+        padding: 10px;
+        font-size: 18px;
     }
     
    }
