@@ -65,3 +65,22 @@ function toggleHeight3() {
 
   // Call the slideImages function at regular intervals to create a sliding effect
   setInterval(slideImages, 3000); 
+
+
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var secondDiv = document.getElementById('secondDiv');
+
+    // Listen for scroll events
+    window.addEventListener('scroll', function () {
+        // Check if the user has scrolled down a certain amount (adjust as needed)
+        if (window.scrollY > 250) {
+            // Slide down the sticky div by changing the 'top' property
+            secondDiv.style.top = '0';
+        } else {
+            // Move the sticky div back above the viewport when scrolling up
+            secondDiv.style.top = '-100px';
+        }
+    });
+});

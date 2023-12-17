@@ -4,6 +4,14 @@
     padding: 70px;
     margin-top: 10px;
     color: #fff;
+    line-height: 10px;
+}
+#veryfirst>h1{
+    font-size: 37px;
+    color: #fff;
+}
+#veryfirst>p{
+    font-size: large;
 }
 #firstAbout{
     padding-top: 20px;
@@ -35,7 +43,6 @@ margin-left: 20px;
   width:55% ;
 }
 #droping{
-    color: black;
     height: auto;
     transition: height 0.4s;
     overflow: hidden;
@@ -43,7 +50,6 @@ margin-left: 20px;
     padding-right: 20px;
    }
    #droping1{
-    color: black;
     height: auto;
     transition: height 0.4s;
     overflow: hidden;
@@ -63,7 +69,7 @@ margin-left: 20px;
 #under1{
     width: 70%;
     padding: 10px;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 30px;
 }
 #under2{
@@ -135,7 +141,57 @@ margin-left: 20px;
 #nd{
     padding-left: 5%;
 }
+
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+    margin-bottom: 10%;
+
+}
+#contact>div{
+    width: 32%;
+}
+#spanner{
+    display: flex;
+    flex-direction: row;
+    font-size: 18px; 
+}
+#spanner>span{
+    margin:20px ;
+}
+#spanner>span>img{
+    width: 70px;
+}
+@media screen and (max-width:700px) {
+    #image{
+        width: 100%;
+    }}
 @media screen and (max-width:900px) {
+    #contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 30px;
+        margin-left: 10px;
+    }
+#contact>div{
+    width: auto;
+}
+    #spanner{
+        display: flex;
+        flex-direction: row; 
+        justify-content:start;
+        text-align: left;
+    }
+    #spanner>span{
+        margin:20px ;
+    }
+    #spanner>span>img{
+        width: 70px;
+    }
+
     #ndt{
         display: flex;
         flex-direction: column;
