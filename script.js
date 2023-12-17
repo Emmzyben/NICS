@@ -18,4 +18,28 @@ function openNav() {
 }
 
   
- 
+function toggleHeight3() {
+    var writeUpsDiv = document.getElementById('droping');
+    var currentHeight = writeUpsDiv.offsetHeight;
+  
+    if (currentHeight === 0 ) {
+      writeUpsDiv.style.height = 'auto'; 
+     document.getElementById("inner").innerText="-";
+    } else {
+      writeUpsDiv.style.height = '0px'; 
+      document.getElementById("inner").innerText="+";
+    }
+  }
+
+  function toggleHeight4() {
+    var writeUpsDiv = document.getElementById('droping1');
+    var currentHeight = writeUpsDiv.offsetHeight;
+  
+    if (currentHeight === 0 ) {
+      writeUpsDiv.style.height = 'auto'; 
+     document.getElementById("inner").innerText="-";
+    } else {
+      writeUpsDiv.style.height = '0px'; 
+      document.getElementById("inner").innerText="+";
+    }
+  }
