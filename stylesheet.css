@@ -253,19 +253,21 @@ padding-left: 15px;
 #homeServices{
   display: flex;
   flex-direction: row;
-  justify-content: center;
+justify-content: space-between;
 }
 
-#homeServices>div{
-  font-size: 18px;
+#homeServices>a{
+  font-size: 17px;
   line-height: 25px;
-width: 22%;
-margin: 15px;
+  text-decoration: none;
+width: 25%;
+margin: 10px;
 border: 1px solid #e1e1e1;
 background-color: #fafafa;
-border-radius: 5px;
+border-radius: 10px;
 text-align: center;
 transition: 0.5s;
+color: #353030;
 box-shadow: 3px 10px 2px #c8cbcf;
 }
 #homeServices>div:hover{
@@ -387,7 +389,7 @@ box-shadow: 3px 10px 2px #c8cbcf;
   #homeServices{
     flex-wrap: wrap;
   }
-  #homeServices>div{
+  #homeServices>a{
 width: 45%;
   }
   #intro{
@@ -417,7 +419,7 @@ width: 45%;
     flex-wrap: wrap;
   }
 
-  #homeServices>div{
+  #homeServices>a{
 width: auto;
 margin: 0;
 margin-bottom: 20px;
