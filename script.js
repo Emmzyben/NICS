@@ -85,3 +85,40 @@ function toggleHeight3() {
     });
 });
 
+
+const imageUrls = [
+  'images/Rectangle 2.png',
+  'images/pic1.jpg',
+  'images/pic.jpg',
+  'images/pic2.jpg',
+  'images/pic3.jpg',
+  'images/pic5.jpg',
+ 'images/inspection-services.png',
+
+
+
+
+];
+
+let currentIndex = 0;
+
+function updateImage() {
+  const rotatingImage = document.getElementById('rotating-image');
+  rotatingImage.src = imageUrls[currentIndex];
+}
+
+function goToPrevious() {
+  currentIndex = currentIndex === 0 ? imageUrls.length - 1 : currentIndex - 1;
+  updateImage();
+}
+
+function goToNext() {
+  currentIndex = (currentIndex + 1) % imageUrls.length;
+  updateImage();
+}
+
+// Automatically rotate images every 3 seconds
+setInterval(goToNext, 6000);
+
+// Initial image update
+updateImage();
