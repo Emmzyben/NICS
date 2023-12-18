@@ -5,6 +5,7 @@
     <title>Projects</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="pages.css">
+    <link rel="shortcut icon" href="images/image 1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -19,12 +20,26 @@
     <img src="images/image 1.png" alt="" width="216px" height="60px" id="img">
 </div>
 <div style="width: 75%;text-align: center;">
-<ul id="ul1">
+  <ul id="ul1">
     <li><a href="index.html" style="color: #0884cc;"><span><i class="fa fa-caret-right"></i></span> Home</a></li>
     <li><a href="about.html"><span id="move"><i class="fa fa-caret-right"></i></span> About Us</a></li> 
-    <li><a href="services.html"><span id="move"><i class="fa fa-caret-right"></i></span> Services +</a></li>
+   <li class="nav-container">
+      <a id="hoverer" href="services.html"><span id="move" class="hover"><i class="fa fa-caret-right"></i></span> Services +</a>
+       <ul id="dropdown">
+          <li><a href="testing.html">Testing Services</a></li>
+          <li><a href="inspection.html">Inspection Services</a></li>
+          <li><a href="NDT_Training.html">NDT Training Services</a></li>
+          <li><a href="specialized_Services.html">Specialized Services</a></li>
+       </ul>
+     </li>
     <li><a href="projects.html"><span id="move"><i class="fa fa-caret-right"></i></span> Projects</a></li>
-    <li><a href="policies.html"><span id="move"><i class="fa fa-caret-right"></i></span> Policies +</a></li>
+   <li class="nav-container">
+      <a id="hoverer"><span id="move" class="hover"><i class="fa fa-caret-right"></i></span> Policies +</a> 
+       <ul id="dropdown">
+          <li><a href="quality-policy-objectives.html">Quality Policy & Objectives</a></li>
+          <li><a href="hse-policy-management-system.html">HSE Policy & Management System</a></li>
+       </ul>
+     </li>
     <li><a href="careers.html"><span id="move"><i class="fa fa-caret-right"></i></span> Careers</a></li>
     <li><a href="contact.html"><span id="move"><i class="fa fa-caret-right"></i></span> Contact</a></li>
 </ul>

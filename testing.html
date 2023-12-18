@@ -5,6 +5,7 @@
     <title>Testing</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="pages.css">
+    <link rel="shortcut icon" href="images/image 1.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -19,12 +20,26 @@
     <img src="images/image 1.png" alt="" width="216px" height="60px" id="img">
 </div>
 <div style="width: 75%;text-align: center;">
-<ul id="ul1">
+  <ul id="ul1">
     <li><a href="index.html" style="color: #0884cc;"><span><i class="fa fa-caret-right"></i></span> Home</a></li>
     <li><a href="about.html"><span id="move"><i class="fa fa-caret-right"></i></span> About Us</a></li> 
-    <li><a href="services.html"><span id="move"><i class="fa fa-caret-right"></i></span> Services +</a></li>
+   <li class="nav-container">
+      <a id="hoverer" href="services.html"><span id="move" class="hover"><i class="fa fa-caret-right"></i></span> Services +</a>
+       <ul id="dropdown">
+          <li><a href="testing.html">Testing Services</a></li>
+          <li><a href="inspection.html">Inspection Services</a></li>
+          <li><a href="NDT_Training.html">NDT Training Services</a></li>
+          <li><a href="specialized_Services.html">Specialized Services</a></li>
+       </ul>
+     </li>
     <li><a href="projects.html"><span id="move"><i class="fa fa-caret-right"></i></span> Projects</a></li>
-    <li><a href="policies.html"><span id="move"><i class="fa fa-caret-right"></i></span> Policies +</a></li>
+   <li class="nav-container">
+      <a id="hoverer"><span id="move" class="hover"><i class="fa fa-caret-right"></i></span> Policies +</a> 
+       <ul id="dropdown">
+          <li><a href="quality-policy-objectives.html">Quality Policy & Objectives</a></li>
+          <li><a href="hse-policy-management-system.html">HSE Policy & Management System</a></li>
+       </ul>
+     </li>
     <li><a href="careers.html"><span id="move"><i class="fa fa-caret-right"></i></span> Careers</a></li>
     <li><a href="contact.html"><span id="move"><i class="fa fa-caret-right"></i></span> Contact</a></li>
 </ul>
@@ -78,35 +93,35 @@
 <div class="under3">
   <div>
  <p>Conventional Nondestructive Testing</p>   
-<ul>
-  <li>Pressure Testing</li>
-<li>Post Weld Heat Treatment (PWHT)</li>
-<li>Ultrasonic Testing (UT)</li>
-<li>Dye Penetrant Testing (DPT)</li>
-<li>Magnetic Particle Inspection (MPI)</li>
-<li>Radiographic Testing (RT)</li>
-<li>Visual Testing (VT)</li>
-<li>Vacuum Box Testing</li>
-<li>Hardness Testing</li>
-<li>Flow Rate Measurement</li>
-<li>Holiday Testing</li>
-<li>Coating Thickness measurement.</li>
+<ul class="custom-list">
+  <li><i class="fa fa-angle-double-right"></i>Pressure Testing</li>
+<li><i class="fa fa-angle-double-right"></i>Post Weld Heat Treatment (PWHT)</li>
+<li><i class="fa fa-angle-double-right"></i>Ultrasonic Testing (UT)</li>
+<li><i class="fa fa-angle-double-right"></i>Dye Penetrant Testing (DPT)</li>
+<li><i class="fa fa-angle-double-right"></i>Magnetic Particle Inspection (MPI)</li>
+<li><i class="fa fa-angle-double-right"></i>Radiographic Testing (RT)</li>
+<li><i class="fa fa-angle-double-right"></i>Visual Testing (VT)</li>
+<li><i class="fa fa-angle-double-right"></i>Vacuum Box Testing</li>
+<li><i class="fa fa-angle-double-right"></i>Hardness Testing</li>
+<li><i class="fa fa-angle-double-right"></i>Flow Rate Measurement</li>
+<li><i class="fa fa-angle-double-right"></i>Holiday Testing</li>
+<li><i class="fa fa-angle-double-right"></i>Coating Thickness measurement.</li>
 </ul>
 
   </div>
   <div>
   <p>Advanced Non-Destructive Testing</p>  
 
-<ul>
- <li>Computed Radiography Testing (CRT)</li> 
-<li>Pulsed Eddy current Inspection (PEC)</li>
-<li>Long range ultrasonic testing (LRUT)</li>
-<li>Corrosion Mapping</li>
-<li>Phased Array Ultrasonic Testing (PAUT)</li>
-<li>Digital Radiographic Testing (DRT)</li>
-<li>Time of Flight Diffraction (TOFD)</li>
-<li>Non-contact Magnetometry</li>
-<li>Destructive Testing</li>
+<ul class="custom-list">
+ <li><i class="fa fa-angle-double-right"></i>Computed Radiography Testing (CRT)</li> 
+<li><i class="fa fa-angle-double-right"></i>Pulsed Eddy current Inspection (PEC)</li>
+<li><i class="fa fa-angle-double-right"></i>Long range ultrasonic testing (LRUT)</li>
+<li><i class="fa fa-angle-double-right"></i>Corrosion Mapping</li>
+<li><i class="fa fa-angle-double-right"></i>Phased Array Ultrasonic Testing (PAUT)</li>
+<li><i class="fa fa-angle-double-right"></i>Digital Radiographic Testing (DRT)</li>
+<li><i class="fa fa-angle-double-right"></i>Time of Flight Diffraction (TOFD)</li>
+<li><i class="fa fa-angle-double-right"></i>Non-contact Magnetometry</li>
+<li><i class="fa fa-angle-double-right"></i>Destructive Testing</li>
 </ul>  
 
   </div>
@@ -115,6 +130,37 @@
 
 
     
+    <div id="under2">
+      <div><h2>Quick Links</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    
+    <div>
+      <h1>Our Services</h1>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="inspection.html">Inspection</a></li>
+        <li><a href="testing.html">Testing</a></li>
+        <li><a href="NDT_Training.html">NDT Training</a></li>
+        <li><a href="specialized_Services.html">Specialized Services</a></li>
+      </ul>
+    </div>
+    
+    
+    </div>
+      </div>
+</section>
+
+
+
+
+
+
 <footer>
   <div id="footDivs" >
     <div >
@@ -167,61 +213,6 @@
   </div>  
 
 <p><b>Open Hours:</b></p>
-<p>Mon – Sat: 8am – 5pm </p>
-<p>Sunday: CLOSED</p>
-    </div>
-  </div>
-  </div>
-</div>
-  <div id="bottom">
-<p>Copyright © 2021 NICS Inspection Consultancy Services Limited. All rights reserved.</p>
-  </div>
-</footer>
-      </div>
-</section>
-
-
-
-
-
-
-<footer>
-  <div id="footDivs" >
-    <div >
-  <div id="innnerfoot" class="inner">
- <div >
- <p>Quick Links</p> 
-<p><a href="index.html">Home</a></p>
-<p><a href="about.html">About Us</a></p>
-<p><a href="careers.html">Careers</a></p>
-<p><a href="projects.html">Projects</a></p>
-<p><a href="contact.html">Contact</a></p>
- </div> 
- <div >
- <p>Services</p> 
-<p><a href="services.html">Services</a></p>
-<p><a href="inspection.html">Inspection</a></p>
-<p><a href="testing.html">Testing</a></p>
-<p><a href="NDT_Training.html">NDT Training</a></p>
-<p><a href="specialized_Services.html">Specialized Services</a></p>
- </div> 
- </div>
- 
-   <div id="innnerfoot">
-    <div>
-      <p>Office Address</p>
-    <p>27 Elf Road, 
-     Trans-Amadi Industrial Layout,</p>  
-     <p>Port Harcourt,  Rivers State.</p>   
-
-    </div>
-    <div>
-  <p>Phone & Email</p>    
-<p>+234 803 547 6154</p>
-<p>+234 705 437 5084</p>
-<p>info@ nicsconsultlimited.com
-</p>
-<p>Open Hours:</p>
 <p>Mon – Sat: 8am – 5pm </p>
 <p>Sunday: CLOSED</p>
     </div>

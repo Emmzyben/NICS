@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color: #fff;
     color: #3d3d3d;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body h1{
   color: #000000;
@@ -16,7 +17,6 @@ body h2{
    font-size: 14px;
 }
 #firstDiv>div{
-      
       width: 50%;
 }
 
@@ -154,28 +154,9 @@ padding-left: 15px;
 }
 
 #move{
-    position: relative;
-    left: -4px;
-    animation: example 0.3s ease-in-out forwards;
+    display: none;
 }
 
-#ul1 > li>a:hover {
-    color: #0884cc;
-}
-
-@keyframes example {
-    0% {
-        position: relative;
-        left: -4px;
-        transform: translateX(0);
-    }
-
-    100% {
-        position: relative;
-        left: 2px;
-        transform: translateX(5px);
-    }
-}
 
 
 /* footer */
@@ -477,3 +458,52 @@ margin-bottom: 20px;
   background-size: cover;
   height: 550px;
 }
+
+.nav-container {
+  position: relative;
+  display: inline-block;
+}
+
+#dropdown {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  position: absolute;
+  top: 75%;
+  left: 0;
+  width: 200px;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 5px;
+}
+
+#dropdown a:hover {
+  background-color: #0884cc;
+  color: #fff;
+  font-size: 16px;
+  padding: 7px;
+  transition: 0.5s;
+}
+
+#dropdown a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #292626;
+  display: block;
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 14px;
+  border-bottom: 1px solid #f7f4f4;
+}
+
+#hoverer {
+  cursor: pointer;
+}
+
+/* Show the dropdown when either the "Services" link or the dropdown itself is hovered */
+#hoverer:hover + #dropdown,
+#dropdown:hover {
+  max-height: 200px; /* Set an appropriate value for your content */
+  transition: max-height 0.5s ease-in;
+}
+
