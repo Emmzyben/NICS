@@ -114,7 +114,6 @@ body h2{
   
   .sidenav a {
     text-decoration: none;
-    font-size: 18px;
     display: block;
     transition: 0.3s;
     line-height: 50px;
@@ -214,6 +213,7 @@ padding-left: 15px;
   width:auto;
   padding: 10px;
   padding-top: 20px;
+  font-size: 14px;
 }
 }
 
@@ -296,6 +296,9 @@ box-shadow: 3px 10px 2px #c8cbcf;
 }
 #padding{
   padding: 30px;
+}
+#pad{
+  font-size: 20px;
 }
 .outer-container {
   width: 100%;
@@ -391,6 +394,7 @@ box-shadow: 3px 10px 2px #c8cbcf;
   }
   #homeServices>a{
 width: 45%;
+font-size: 15px;
   }
   #intro{
     margin: 0;
@@ -401,6 +405,23 @@ width: 45%;
   }
 }
 @media screen and (max-width:700px) {
+  #lastDiv>h2{
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 1px 1px 7px rgb(43, 42, 42);
+  }
+  #lastDiv>p{
+    font-size: 18px;
+  }  
+  #pad{
+    font-size: 16px;
+  }
+  #intro>div>p{
+    font-size: 17px;
+  }
+  #intro>div>h1{
+    font-size: 35px;
+  }
   #intro{
   flex-wrap: wrap;
   margin: 0;
@@ -435,7 +456,7 @@ margin-bottom: 20px;
    margin-bottom: 40px;
   }
   .inner-container>div{
-   font-size: 20px;
+   font-size: 16px;
    line-height: 30px; 
    width: 50%;
   }
@@ -508,4 +529,10 @@ margin-bottom: 20px;
   max-height: 200px; /* Set an appropriate value for your content */
   transition: max-height 0.5s ease-in;
 }
+
+
+@media screen and (max-width: 768px) {
+
+}
+
 

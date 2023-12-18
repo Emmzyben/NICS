@@ -183,9 +183,20 @@ margin-left: 20px;
     width: 70px;
 }
 @media screen and (max-width:700px) {
+    .under3>div>ul>li{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .under1{
+        font-size: 17px;
+    }
+   
     #image{
         width: 100%;
     }}
+    #innerSecond2{
+        font-size: 16px;line-height: 30px;
+      }
 @media screen and (max-width:900px) {
     #contact{
         display: flex;
@@ -221,7 +232,7 @@ margin-left: 20px;
         padding: 20px;
     }
     #ndt1>ul>li{
-        font-size: 20px;
+        font-size: 16px;
         line-height: 35px;
     }
     #ndt2{
@@ -316,7 +327,7 @@ margin-left: 20px;
     #under1{
         width:auto;
         padding: 10px;
-        font-size: 20px;
+        font-size: 17px;
     }
     #under2{
         width: auto;
@@ -360,3 +371,4 @@ table,tr,th,td{
     text-align: left;
     font-weight: 600;
 }
+
