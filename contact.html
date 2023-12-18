@@ -69,7 +69,7 @@
 </div>
  
 
-<section>
+<section id="slidingDiv" class="hidden">
   <div id="contact">
     <div id="spanner">
       <span><img src="images/box-icon2.png" alt=""></span>
@@ -167,7 +167,19 @@
 <p>Copyright © 2021 NICS Inspection Consultancy Services Limited. All rights reserved.</p>
   </div>
 </footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  var slidingDiv = document.getElementById("slidingDiv");
 
+  // Add a class to display the div and initiate the slide-out animation
+  slidingDiv.classList.remove("hidden");
+
+  // After a short delay, reset the left property to its final position
+  setTimeout(function() {
+      slidingDiv.style.left = "0";
+  }, 10);
+});
+</script>
     <script src="script.js"></script>
 </body>
 </html>

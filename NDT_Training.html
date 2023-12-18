@@ -98,18 +98,48 @@
     </div>
         
             <div id="ndt2">
-              <div id="imageSlider">
-                <div id="imageContainer">
-                  <img class="sliderImage" src="images/pic1.jpg" alt="Image 1">
-                  <img class="sliderImage" src="images/pic2.jpg" alt="Image 2">
-                  <img class="sliderImage" src="images/pic3.jpg" alt="Image 3">
-                  <img class="sliderImage" src="images/pic5.jpg" alt="Image 4">
+              <div class="slideshow-container">
+                <div class="slide">
+                    <img src="images/pic1.jpg" alt="Image 1" class="img">
+                </div>
+                <div class="slide">
+                    <img src="images/Rectangle 2.png" alt="Image 2" class="img">
+                </div>
+                <div class="slide">
+                    <img src="images/pic.jpg" alt="Image 3" class="img">
+                </div>
+                <div class="slide">
+                    <img src="images/pic2.jpg" alt="Image 4" class="img">
+                </div>
+                <div class="slide">
+                    <img src="images/pic3.jpg" alt="Image 5" class="img">
                 </div>
               </div>
             </div>
           </div>
       </div>
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+  var currentSlide = 0;
+  var slides = document.querySelectorAll('.slide');
+
+  function showSlide(index) {
+      slides.forEach(function(slide) {
+          slide.style.display = 'none';
+      });
+      slides[index].style.display = 'block';
+  }
+
+  function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+      setTimeout(nextSlide, 4000); // Adjust the time (in milliseconds) between slides
+  }
+
+  showSlide(currentSlide);
+  setTimeout(nextSlide, 4000); // Adjust the time (in milliseconds) before the first slide
+});
+    </script>
     </div>
   </div>
 </section>
