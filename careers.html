@@ -61,9 +61,41 @@
   </div>
   <a href="index.html">Home</a>
   <a href="about.html">About Us</a>
-  <a href="services.html">Services +</a>
+
+  <a class="dropdown-item" onclick="toggleDropdown()" style="  background-color: #0884cc;
+  color: #fff;">
+   Services +
+      <div class="sub-menu1" style="display: none;transition: 0.5s;">
+        <a href="testing.html">Testing Services</a>
+        <a href="inspection.html">Inspection Services</a>
+        <a href="NDT_Training.html">NDT Training</a>
+        <a href="specialized_Services.html">Specialized Services</a>
+      </div>
+    </a>
+ 
+    <script>
+      function toggleDropdown() {
+        const subMenu = document.querySelector('.sub-menu1');
+        subMenu.style.display = (subMenu.style.display === 'none' || subMenu.style.display === '') ? 'block' : 'none';
+      }
+    </script>
+ 
   <a href="projects.html">Projects</a>
-  <a href="policies.html">Policies +</a>
+  <a class="dropdown-item" onclick="toggleDropdown1()" style="  background-color: #0884cc;
+  color: #fff;">
+    Policies +
+       <div class="sub-menu2" style="display: none;transition: 0.5s;">
+        <a href="quality-policy-objectives.html">Quality Policy</a>
+        <a href="hse-policy-management-system.html">Hse policy</a>
+       </div>
+     </a>
+  
+     <script>
+       function toggleDropdown1() {
+         const subMenu2 = document.querySelector('.sub-menu2');
+         subMenu2.style.display = (subMenu2.style.display === 'none' || subMenu2.style.display === '') ? 'block' : 'none';
+       }
+     </script>
   <a href="careers.html">Careers</a>
   <a href="contact.html">Contact</a>
 </div>
