@@ -612,3 +612,42 @@ position: relative;
 .hidden {
   display: none;
 }
+
+#flag-container {
+  white-space: nowrap;
+  overflow: hidden;
+ background-color: #fff;
+}
+
+.flag-container-inner {
+  display: inline-block;
+  white-space: nowrap;
+          padding: 30px;
+}
+
+.flag {
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+  margin-right: 3%;
+}
+
+#flagger {
+  background-color: #fff;
+}
+
+@media screen and (max-width:700px) {
+.flag-container-inner {
+  display: inline-block;
+  white-space: nowrap;
+          padding: 20px;
+}
+
+.flag {
+  width: 100px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 2%;
+}
+
+}

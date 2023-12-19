@@ -133,10 +133,9 @@
       <li><a href="contact.html">Contact</a></li>
     </ul></div>
     
-    <div>
+      <div>
       <h1>Our Services</h1>
       <ul>
-        <li><a href="services.html">Services</a></li>
         <li><a href="inspection.html">Inspection</a></li>
         <li><a href="testing.html">Testing</a></li>
         <li><a href="NDT_Training.html">NDT Training</a></li>
@@ -151,6 +150,50 @@
 
 
 
+<div id="flag-container">
+  <h1 style="text-align: center;color: #0884cc;">Our Clients</h1>
+  <div id="flagger">
+    <div class="flag-container-inner"></div>
+  </div>
+  <script>
+    
+const countryFlags = ['images/shell.png', 'images/strides.png', 'images/agip.png', 'images/alcon.png', 'images/mobil.png', 'images/nnpc.png'];
+
+const flagContainerInner = document.querySelector('.flag-container-inner');
+
+function createFlagElement(flagPath) {
+  const flagElement = document.createElement('img');
+  flagElement.src = flagPath;
+  flagElement.classList.add('flag');
+  return flagElement;
+}
+
+// Duplicate the images to ensure seamless rolling effect
+const duplicatedFlags = [...countryFlags, ...countryFlags];
+
+duplicatedFlags.forEach(flagPath => {
+  const flagElement = createFlagElement(flagPath);
+  flagContainerInner.appendChild(flagElement);
+});
+
+let currentPosition = 0;
+const increment = 0.05; // Adjust the increment value for the desired speed
+
+function rollFlags() {
+  currentPosition -= increment;
+  flagContainerInner.style.transform = `translateX(${currentPosition}%)`;
+
+  if (currentPosition <= -100) {
+    currentPosition = 0;
+  }
+
+  requestAnimationFrame(rollFlags);
+}
+
+// Start the animation loop
+rollFlags();
+  </script>
+</div>
 
 
 <footer>
@@ -167,7 +210,7 @@
    </div> 
    <div >
    <p id="linkz">Services</p> 
-  <p><a href="services.html">Services</a></p>
+   
   <p><a href="inspection.html">Inspection</a></p>
   <p><a href="testing.html">Testing</a></p>
   <p><a href="NDT_Training.html">NDT Training</a></p>
