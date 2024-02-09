@@ -239,14 +239,17 @@ rollFlags();
       <span>
         <p>+234 803 547 6154</p>
   <p>+234 705 437 5084</p></span>     
-    </div>  
-  
+    </div> 
+     
     <div id="seperate">
       <span id="seperate1"> <i class="fa fa-envelope" style="font-size:20px;color:#0884cc"></i></span>
       <span>
-        <p>info@ nicsconsultlimited.com
-        </p></span>     
-    </div>  
+        <p><a href="http://nicsconsultlimited.com/webmail" target="_blank" style="color:rgb(43, 38, 38);text-decoration: none;">info@ nicsconsultlimited.com
+        </a></p></span> 
+        <span>
+         <p><a href="http://nicsconsultlimited.com/webmail" target="_blank" style="color:rgb(43, 38, 38);text-decoration: none;">admin@nicsconsultlimited.com</a></p> 
+        </span>    
+    </div>
   
   <p><b>Open Hours:</b></p>
   <p>Mon – Sat: 8am – 5pm </p>
@@ -259,6 +262,12 @@ rollFlags();
   <p>Copyright © 2021 NICS Inspection Consultancy Services Limited. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+    if (window.location.pathname.endsWith('.html')) {
+        var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
+        window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
+    }
+</script>
     <script src="script.js"></script>
 </body>
 </html>

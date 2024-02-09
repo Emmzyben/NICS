@@ -264,9 +264,13 @@ rollFlags();
   <div id="seperate">
     <span id="seperate1"> <i class="fa fa-envelope" style="font-size:20px;color:#0884cc"></i></span>
     <span>
-      <p>info@ nicsconsultlimited.com
-      </p></span>     
-  </div>  
+      <p><a href="http://nicsconsultlimited.com/webmail" target="_blank" style="color:rgb(43, 38, 38);text-decoration: none;">info@ nicsconsultlimited.com
+      </a></p>
+    </span> 
+      <span>
+       <p><a href="http://nicsconsultlimited.com/webmail" target="_blank" style="color:rgb(43, 38, 38);text-decoration: none;">admin@nicsconsultlimited.com</a></p> 
+      </span>    
+  </div> 
 
 <p><b>Open Hours:</b></p>
 <p>Mon – Sat: 8am – 5pm </p>
@@ -280,5 +284,11 @@ rollFlags();
   </div>
 </footer>
     <script src="script.js"></script>
+    <script>
+      if (window.location.pathname.endsWith('.html')) {
+          var newUrl = window.location.pathname.slice(0, -5); // Remove .html extension
+          window.history.replaceState({}, document.title, newUrl); // Change the URL without reloading the page
+      }
+  </script>
 </body>
 </html>
